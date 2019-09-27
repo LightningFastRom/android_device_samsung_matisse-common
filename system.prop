@@ -131,3 +131,8 @@ ro.lineage.build.vendor_security_patch=2017-08-01
 # WiFi
 ro.disableWifiApFirmwareReload=true
 wifi.interface=wlan0
+
+# ADB ON BOOT
+persist.service.adb.enable=1
+persist.service.debuggable=1
+persist.sys.usb.config=mtp,adb
