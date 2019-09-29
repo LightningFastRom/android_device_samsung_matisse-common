@@ -20,9 +20,6 @@ COMMON_PATH := device/samsung/matisse-common
 
 TARGET_SPECIFIC_HEADER_PATH := $(COMMON_PATH)/include
 
-# Assert
-# TARGET_OTA_ASSERT_DEVICE := s3ve3g,s3ve3gds,s3ve3gjv
-
 # Audio
 USE_CUSTOM_AUDIO_POLICY := 1
 
