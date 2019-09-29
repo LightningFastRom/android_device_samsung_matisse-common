@@ -58,7 +58,7 @@ TARGET_KERNEL_SOURCE := kernel/samsung/msm8226-n
 
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_msm8226
-TARGET_LIBINIT_MSM8226_DEFINES_FILE := device/samsung/matissewifi/init/init_matissewifi.cpp
+TARGET_LIBINIT_MSM8226_DEFINES_FILE := device/samsung/matisse-common/init/init_matisse.cpp
 
 # Shims
 TARGET_LD_SHIM_LIBS += \
