@@ -64,7 +64,6 @@ TARGET_LIBINIT_MSM8226_DEFINES_FILE := device/samsung/matisse-common/init/init_m
 TARGET_LD_SHIM_LIBS += \
         /system/vendor/lib/libmmcamera_sr130pc20.so|libshim_sr130pc20.so
 
-
 # Legacy BLOB Support
 TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS := true
 TARGET_PROCESS_SDK_VERSION_OVERRIDE += \
