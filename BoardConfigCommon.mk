@@ -57,7 +57,16 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000 --tags_offset 0x1e00000
 BOARD_CUSTOM_BOOTIMG := true
 BOARD_CUSTOM_BOOTIMG_MK := hardware/samsung/mkbootimg.mk
 LZMA_RAMDISK_TARGETS := recovery
-TARGET_KERNEL_SOURCE := kernel/samsung/msm8226
+TARGET_KERNEL_SOURCE := kernel/samsung/msm8226-n
+
+# Init
+TARGET_INIT_VENDOR_LIB := libinit_msm8226
+TARGET_LIBINIT_MSM8226_DEFINES_FILE := device/samsung/matissewifi/init/init_matissewifi.cpp
+
+# Shims
+TARGET_LD_SHIM_LIBS += \
+        /system/vendor/lib/libmmcamera_sr130pc20.so|libshim_sr130pc20.so
+
 
 # Legacy BLOB Support
 TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS := true
@@ -80,10 +89,6 @@ TARGET_POWERHAL_VARIANT := qcom
 
 # Properties
 TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
-
-# Radio
-# BOARD_PROVIDES_LIBRIL := true
-# TARGET_RIL_VARIANT := caf
 
 # Recovery
 BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../$(COMMON_PATH)/recovery/recovery_keys.c
