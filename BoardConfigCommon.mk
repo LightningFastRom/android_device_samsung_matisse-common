@@ -43,10 +43,6 @@ TARGET_EXFAT_DRIVER := sdfat
 # HIDL
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest.xml
 
-# FM
-# BOARD_HAVE_QCOM_FM := true
-# TARGET_QCOM_NO_FM_FIRMWARE := true
-
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
 # TODO
@@ -67,8 +63,8 @@ TARGET_KERNEL_SOURCE := kernel/samsung/msm8226
 TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS := true
 TARGET_PROCESS_SDK_VERSION_OVERRIDE += \
     /system/bin/mediaserver=22 \
-    /system/vendor/bin/mm-qcamera-daemon=22 \
-    /system/vendor/bin/hw/rild=27
+    /system/vendor/bin/mm-qcamera-daemon=22
+#    /system/vendor/bin/hw/rild=27
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
