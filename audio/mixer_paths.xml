@@ -48,6 +48,8 @@
 	<ctl name="SPK_SRC Mux" value="PCM" />
 	<ctl name="AIN Gain" value="0"/>
 	<ctl name="INTERNAL_FM_RX Audio Mixer MultiMedia4" value="0" />
+	<ctl name="Speaker Digital Switch" id="0" value="0" />
+	<ctl name="CRADLE Switch" value="0" />
 
 	<!-- fm -->
 	<ctl name="SLIMBUS_0_RX Port Mixer INTERNAL_FM_TX" value="0" />
@@ -599,10 +601,13 @@
 
 	<path name="spk">
 		<ctl name="SLIM RX1 MUX" value="AIF1_PB" />
-		<ctl name="SLIM_0_RX Channels" value="One" />
+		<ctl name="SLIM RX2 MUX" value="AIF1_PB" />
+		<ctl name="SLIM_0_RX Channels" value="Two" />
 		<ctl name="RX4 MIX1 INP1" value="RX1" />
+		<ctl name="RX3 MIX1 INP1" value="RX2" />
+		<ctl name="RDAC5 MUX" value="DEM4" />
 		<ctl name="SPK DAC Switch" value="1" />
-		<ctl name="COMP0 Switch" value="1" />
+		<ctl name="COMP1 Switch" value="1" />
 	</path>
 
 	<path name="ear">
@@ -697,7 +702,8 @@
 
 	<path name="speaker">
 		<path name="spk" />
-		<ctl name="RX4 Digital Volume" value="80" />
+		<ctl name="RX4 Digital Volume" value="78" />
+		<ctl name="RX3 Digital Volume" value="78" />
 		<ctl name="SPK DRV Volume" value="7" />
 		<ctl name="COMP0 Switch" value="0" />
 	</path>
@@ -725,18 +731,22 @@
 		<ctl name="RX1 Digital Volume" value="66" />
 		<ctl name="RX2 Digital Volume" value="66" />
 		<ctl name="RX4 MIX1 INP2" value="RX2" />
-		<ctl name="RX4 Digital Volume" value="78" />
+		<ctl name="RX4 Digital Volume" value="79" />
+		<ctl name="RX3 Digital Volume" value="79" />
 		<ctl name="SPK DRV Volume" value="7" />
+		<ctl name="CRADLE Switch" value="0" />
 	</path>
 
 	<path name="speaker-and-hdmi">
 		<path name="spk" />
 		<ctl name="RX4 Digital Volume" value="84" />
+		<ctl name="RX3 Digital Volume" value="84" />
 	</path>
 
 	<path name="speaker-and-proxy">
 		<path name="spk" />
 		<ctl name="RX4 Digital Volume" value="83" />
+		<ctl name="RX3 Digital Volume" value="84" />
 	</path>
 
 	<path name="speaker-and-dock">
@@ -745,6 +755,7 @@
 		<ctl name="RX3 Digital Volume" value="84" />
 		<ctl name="RX5 Digital Volume" value="84" />
 		<ctl name="RX4 Digital Volume" value="84" />
+		<ctl name="RX3 Digital Volume" value="84" />
 		<ctl name="LINEOUT1 Volume" value="18" />
 		<ctl name="LINEOUT2 Volume" value="18" />
 		<ctl name="SPK DRV Volume" value="20" />
@@ -768,6 +779,7 @@
 	<path name="fm-speaker">
 		<path name="spk" />
 		<ctl name="RX4 Digital Volume" value="84" />
+		<ctl name="RX3 Digital Volume" value="84" />
 		<ctl name="SPK DRV Volume" value="6" />
 	</path>
 
@@ -973,6 +985,7 @@
 	<path name="voice-call-speaker">
 		<path name="spk" />
 		<ctl name="RX4 Digital Volume" value="87" />
+		<ctl name="RX3 Digital Volume" value="84" />
 		<ctl name="SPK DRV Volume" value="8" />
 	</path>
 
@@ -1076,6 +1089,7 @@
 	<path name="video-call-speaker">
 		<path name="spk" />
 		<ctl name="RX4 Digital Volume" value="85" />
+		<ctl name="RX3 Digital Volume" value="84" />
 		<ctl name="SPK DRV Volume" value="8" />
 	</path>
 
@@ -1388,6 +1402,7 @@
 	<path name="voip-speaker-comm">
 		<path name="spk" />
 		<ctl name="RX4 Digital Volume" value="83" />
+		<ctl name="RX3 Digital Volume" value="83" />
 		<ctl name="SPK DRV Volume" value="8" />
 	</path>
 
@@ -1409,6 +1424,7 @@
 	<path name="voip-speaker-others">
 		<path name="spk" />
 		<ctl name="RX4 Digital Volume" value="83" />
+		<ctl name="RX3 Digital Volume" value="83" />
 		<ctl name="SPK DRV Volume" value="8" />
 	</path>
 
@@ -1450,6 +1466,7 @@
 	<path name="voip-speaker-carrier">
 		<path name="spk" />
 		<ctl name="RX4 Digital Volume" value="83" />
+		<ctl name="RX3 Digital Volume" value="83" />
 		<ctl name="SPK DRV Volume" value="8" />
 	</path>
 
@@ -1600,6 +1617,7 @@
 	<path name="loopback-speaker-DSP">
 		<path name="spk" />
 		<ctl name="RX4 Digital Volume" value="92" />
+		<ctl name="RX3 Digital Volume" value="92" />
 		<ctl name="SPK DRV Volume" value="8" />
 	</path>
 
@@ -1621,6 +1639,7 @@
 	<path name="loopback-speaker">
 		<path name="spk" />
 		<ctl name="RX4 Digital Volume" value="83" />
+		<ctl name="RX3 Digital Volume" value="83" />
 		<ctl name="SPK DRV Volume" value="8" />
 	</path>
 
