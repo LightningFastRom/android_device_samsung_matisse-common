@@ -181,7 +181,7 @@ cameradata/datapattern_420sp.yuv
 cameradata/datapattern_front_420sp.yuv
 etc/B08QT_imx175_module_info.xml
 etc/E08QL_s5k4h5yb_module_info.xml
-etc/F08QU_imx219_module_info.xm
+etc/F08QU_imx219_module_info.xml
 etc/firmware/cpp_firmware_v1_1_1.fw
 etc/firmware/cpp_firmware_v1_1_6.fw
 etc/firmware/cpp_firmware_v1_2_0.fw

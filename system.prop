@@ -1,4 +1,4 @@
-# Audio
+ # Audio
 af.fast_track_multiplier=1
 audio.deep_buffer.media=true
 audio.offload.buffer.size.kb=32
