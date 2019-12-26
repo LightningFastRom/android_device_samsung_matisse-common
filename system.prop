@@ -1,4 +1,4 @@
- # Audio
+# Audio
 af.fast_track_multiplier=1
 audio.deep_buffer.media=true
 audio.offload.buffer.size.kb=32
@@ -91,6 +91,9 @@ mm.enable.qcom_parser=37491
 # Memory optimizations
 ro.vendor.qti.am.reschedule_service=true
 
+# NFC
+ro.nfc.port=I2C
+
 # Perf
 ro.vendor.extension_library=/vendor/lib/libqti-perfd-client.so
 
@@ -99,6 +102,9 @@ ro.qc.sdk.gestures.camera=false
 ro.qc.sdk.camera.facialproc=false
 ro.qc.sdk.sensors.gestures=true
 debug.sensors=1
+
+# Tethering
+net.tethering.noprovisioning=true
 
 # Vendor security patch level
 ro.lineage.build.vendor_security_patch=2017-08-01
@@ -110,8 +116,3 @@ ro.lineage.build.vendor_security_patch=2017-08-01
 # WiFi
 ro.disableWifiApFirmwareReload=true
 wifi.interface=wlan0
-
-# ADB ON BOOT
-persist.service.adb.enable=1
-persist.service.debuggable=1
-persist.sys.usb.config=mtp,adb

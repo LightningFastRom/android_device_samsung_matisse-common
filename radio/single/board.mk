@@ -1,4 +1,3 @@
-
 # Properties
 TARGET_SYSTEM_PROP += $(COMMON_PATH)/radio/single/system.prop
 
